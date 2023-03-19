@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - main functon
+ * main - main function
  *
  * Return: Always 0
 */
@@ -15,7 +15,7 @@ int main(void)
 		secondDigit = firstDigit;
 		while (secondDigit <= 99)
 		{
-		if (secondDigit != firstDigit)
+			if (secondDigit != firstDigit)
 			{
 				putchar((firstDigit / 10) + 48);
 				putchar((firstDigit % 10) + 48);
