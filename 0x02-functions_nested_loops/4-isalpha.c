@@ -1,4 +1,4 @@
-#include "main..h"
+#include "main.h"
 
 /**
  * _isalpha - writes the character c to stdout
