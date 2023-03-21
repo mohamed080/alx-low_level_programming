@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - writes the character c to stdout
+ * print_last_digit - writes gfgf the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
