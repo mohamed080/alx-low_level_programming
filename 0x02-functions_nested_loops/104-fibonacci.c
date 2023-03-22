@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (f10 > 0)
 			printf("%lu", f10);
-		inital = numlength(mx) - 1 - numlength(f1);
+		inital = numLength(mx) - 1 - numLength(f1);
 
 		while (f10 > 0 && inital > 0)
 		{
