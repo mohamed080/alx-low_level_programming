@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * more_numbers - print 10 times
+ * more_numbers - print 0 - 14 ten timesand you
+ *		can only use _putchar three times
  *
- * Return: always succes
+ * Return: Always 0 (success)
 */
 
 void more_numbers(void)
