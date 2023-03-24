@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most_numbers - priint 0 - 9 unless 2 & 9
+ * print_most_numbers - print 0 - 9 unless 2 & 9
  *
  * Return: Always 0 (Success)
 */
