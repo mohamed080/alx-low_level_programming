@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>		
+#include <stdlib.h>
 /**
  * create_array - create array
  * @size: size of array
@@ -7,15 +7,17 @@
  * Description: creat array of size size and assign char
  * Return: pointer to the array initilized
 */
-		
-char *create_array(unsigned int size, char c)		
+
+char *create_array(unsigned int size, char c)
 {
 	char *st;
 	unsigned int i;
+
 	st = malloc(sizeof(char) * size);
+
 	if (size == 0 || st == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
 		st[i] = c;
-	return (st);		
+	return (st);
 }
