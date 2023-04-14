@@ -37,5 +37,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (n >= leng2 && m < (leng1 + leng2))
 		stg[m++] = s2[j++];
 	stg[m] = '\0';
-	return (s);
+	return (stg);
 }
