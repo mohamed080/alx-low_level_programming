@@ -10,33 +10,32 @@
  * Return: pointer shall point to a newly allocated space in memory
 */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
-{
-	char *stg;
-	unsigned int m, j, leng1, leng2;
+char *string_nconcat(char *s1, char *s2, unsigned int n)		
+{	
+	char *str;
+	unsigned int i, j, len1, len2;
 
-	while (s1 && s1[leng1])
-		leng1++;
-	while (s2 && s2[leng2])
-		leng2++;
-	if (n < leng2)
-
-		stg = malloc(sizeof(char) * (leng1 + n + 1));
-
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
+	if (n < len2)
+		str = malloc(sizeof(char) * (len1 + n + 1));	
 	else
-		stg = malloc(sizeof(char) * (leng1 + leng2 + 1));
-	if (!stg)
+		str = malloc(sizeof(char) * (len1 + len2 + 1));	
+	if (!str)
 		return (NULL);
-	while (m < leng1)
+	while (i < len1)	
 	{
-		s[m] = s1[m];
-		m++;
+		str[i] = s1[i];
+		i++;	
 	}
-	while (n < leng2 && m < (leng1 + n))
-		stg[m++] = s2[j++];
+	while (n < len2 && i < (len1 + n))
+		str[i++] = s2[j++];
+	while (n >= len2 && i < (len1 + len2))		
+		str[i++] = s2[j++];
+		
+	str[i] = '\0';
 
-	while (n >= leng2 && m < (leng1 + leng2))
-		stg[m++] = s2[j++];
-	stg[m] = '\0';
-	return (stg);
+	return (str);		
 }
