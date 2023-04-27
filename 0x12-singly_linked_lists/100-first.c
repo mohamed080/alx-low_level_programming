@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 
 void second(void) __attribute__ ((constructor));
 
