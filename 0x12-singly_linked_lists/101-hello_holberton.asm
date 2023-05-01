@@ -1,4 +1,4 @@
-section		.text   
+section		.text
           extern    printf
 main:
 	mov		edi, msg
