@@ -1,11 +1,11 @@
 section		.text   
           extern    printf
 main:
-	  mov   edi, format
-	  xor   eax, eax
-	  call  printf
-	  mov 	eax, 0
-	  ret
+	mov		edi, msg
+	mov		eax, 0
+	call	printf
+
+
 section 	.data
-	msg db `Hello, Holberton\n`,0
+	msg db 'Hello, Holberton', 0xa, 0
 
