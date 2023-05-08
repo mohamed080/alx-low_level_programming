@@ -10,7 +10,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *poin;
+	char *buf;
 	ssize_t fd;
 	ssize_t w;
 	ssize_t r;
@@ -18,11 +18,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	poin = malloc(sizeof(char) * letters);
-	r = read(fd, poin, letters);
-	w = write(STDOUT_FILENO, poin, t);
+	buf = malloc(sizeof(char) * letters);
+	r = read(fd, buf, letters);
+	w = write(STDOUT_FILENO, buf, t);
 
-	free(poin);
+	free(buf);
 	close(fd);
 	return (w);
 }
